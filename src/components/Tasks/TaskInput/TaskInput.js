@@ -8,6 +8,9 @@ const TaskInput = (props) => {
   const [isInputValid, setIsInputValid] = useState(true);
 
   const taskInputChangeHandler = (event) => {
+    if (event.target.value.trim().length>0){
+        setIsInputValid(true);
+    }
     setInputText(event.target.value);
   };
 
