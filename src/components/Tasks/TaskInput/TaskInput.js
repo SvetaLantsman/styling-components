@@ -4,7 +4,6 @@ import Button from "../../UI/Button/Button";
 import "./TaskInput.css";
 const FormControl = styled.div`
  {  
-    width: 100%;
     margin: 0.5rem 0;
   }
 
@@ -30,11 +29,6 @@ const FormControl = styled.div`
     background: #c8e1e4;
     border-color: #00358b;
   }
-
-  @media (min-width = 700px){
-    width: auto;
-  }
-
 `
 const TaskInput = (props) => {
   const [inputText, setInputText] = useState("");
