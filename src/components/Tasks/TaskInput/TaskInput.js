@@ -4,14 +4,19 @@ import Button from "../../UI/Button/Button";
 import "./TaskInput.css";
 
 const TaskInput = (props) => {
-  const [inputText, setinputText] = useState("");
+  const [inputText, setInputText] = useState("");
+  const [isInputValid, setIsInputValid] = useState(true);
 
   const taskInputChangeHandler = (event) => {
-    setinputText(event.target.value);
+    setInputText(event.target.value);
   };
 
   const formSubmitHandler = (event) => {
     event.preventDefault();
+    if(inputText.trim().length === 0){
+      setIsInputValid(false);
+      return;
+    }
     props.onAddTask(inputText);
   };
 
