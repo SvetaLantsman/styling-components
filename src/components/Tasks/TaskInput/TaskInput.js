@@ -4,7 +4,7 @@ import Button from "../../UI/Button/Button";
 import "./TaskInput.css";
 const FormControl = styled.div`
  {  
-    width: 100;
+    width: 100%;
     margin: 0.5rem 0;
   }
 
