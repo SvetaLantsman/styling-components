@@ -3,7 +3,8 @@ import styled from "styled-components";
 import Button from "../../UI/Button/Button";
 import "./TaskInput.css";
 const FormControl = styled.div`
- {
+ {  
+    width: 100;
     margin: 0.5rem 0;
   }
 
@@ -28,6 +29,10 @@ const FormControl = styled.div`
     outline: none;
     background: #c8e1e4;
     border-color: #00358b;
+  }
+
+  @media (min-width = 700px){
+    width: auto;
   }
 
 `
